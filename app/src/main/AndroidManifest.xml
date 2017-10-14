@@ -47,17 +47,22 @@
             android:parentActivityName=".Main2Activity" />
         <activity
             android:name=".orderPage"
+            android:label="Order Page"
             android:parentActivityName=".Main2Activity" />
         <activity
             android:name=".personalPage"
+            android:label="Personal Page"
             android:parentActivityName=".Main2Activity" />
         <activity android:name=".modifyInformation"
+            android:label="Modify Information"
             android:parentActivityName=".personalPage" ></activity>
 
         <activity android:name=".Fragment.orderList"
+            android:label="Order List"
             android:parentActivityName=".Main2Activity" ></activity>
 
         <activity android:name=".chatFunction"
+            android:label="Chat with Admin"
             android:parentActivityName=".Main2Activity" ></activity>
     </application>
 
