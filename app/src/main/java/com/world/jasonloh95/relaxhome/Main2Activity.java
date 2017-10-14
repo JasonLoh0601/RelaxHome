@@ -15,18 +15,29 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+import com.facebook.appevents.internal.Constants;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.world.jasonloh95.relaxhome.Fragment.HomeCleaning;
 import com.world.jasonloh95.relaxhome.Fragment.Plumber;
 import com.world.jasonloh95.relaxhome.Fragment.Repair;
 import com.world.jasonloh95.relaxhome.Fragment.orderList;
+import com.world.jasonloh95.relaxhome.data.Member;
 
 public class Main2Activity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-
+    private ImageView mDisplayImageView;
+    private TextView mNameTextView;
+    private TextView mEmailTextView;
     TextView headName, headEmail;
     private Main2Activity.SectionsPagerAdapter mSectionsPagerAdapter;
 
@@ -56,6 +67,29 @@ public class Main2Activity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
+        View navHeaderView = navigationView.getHeaderView(0);
+
+        mDisplayImageView = (ImageView) navHeaderView.findViewById(R.id.imageView);
+        mNameTextView = (TextView) navHeaderView.findViewById(R.id.MembersName);
+        mEmailTextView = (TextView) navHeaderView.findViewById(R.id.Email);
+
+        FirebaseDatabase.getInstance().getReference().child("users")
+                .addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot) {
+                        if (dataSnapshot.getValue() != null) {
+                            Member users = dataSnapshot.getValue(Member.class);
+                            Glide.with(Main2Activity.this);
+
+                            mNameTextView.setText(users.getName());
+                            mEmailTextView.setText(users.getEmail());
+                        }
+                    }
+                    @Override
+                    public void onCancelled(DatabaseError databaseError) {
+
+                    }
+                });
         mSectionsPagerAdapter = new Main2Activity.SectionsPagerAdapter(getSupportFragmentManager());
 
         // Set up the ViewPager with the sections adapter.
