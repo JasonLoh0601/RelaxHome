@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">Relax Home</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="Register">Register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string-array name="CLEANING">
+        <item>HOME CLEANZ CLEANING and LAUNDRY SERVICES</item>
+        <item>HOUSE CLEANER SINGAPORESINGAPORE</item>
+        <item>NTUC DOMESTIC CLEANING SERVICE</item>
+    </string-array>
+
+    <string-array name="CleaningDetail">
+        <item>Home Cleanz is founded in 2004 by 2 young graduates from the School of Design and Environment, National University of Singapore.
+            We started out with a simple aim, which is to provide home cleaning services to busy professionals.
+            Differentiating ourselves from the competition in the industry, we place particularly strong emphasis on our company’s service quality and after-sales service.
+            We never stop learning to improve ourselves to serve our clients well. And because
+            of this attitude throughout the company, we build strong and harmonious relationships with many customers.
+            This is our thirteen year into our business, and we have not looked back since.
+            We will continue to push ourselves to a greater height and always constantly innovate to excel in our business!</item>
+        <item>Singapore is one of the few countries on the planet, Earth where its residents enjoy the pride of living an elegant life.
+            Indeed, hundreds and thousands of homeowners achieve the beauty and elegance of their houses/homes/offices by employing different methods;
+            which include keeping pets, flooring the house with beautiful tiles (and other kinds of flooring materials such as engineered wood flooring,
+            laminate flooring, marble flooring, and so on), while others make their rooms nicer by covering the floors with amazingly good carpets, and many more.
+            Nevertheless, this article dwells on carpets as well as ways of retaining its beauty. </item>
+        <item>Enjoy convenient domestic assistance to supplement your busy lifestyle. All domestic cleaners [1] are trained before being assigned job requests.
+
+Two types of packages are available to meet the varying needs of households.
+            Weekly Cleaning is for general regular house cleaning on a regular basis and One-Time Cleaning is suitable for new homes or spring cleaning before a festive season.
+        </item>
+    </string-array>
+
+    <string-array name="CleaningWebsite">
+        <item>www.homecleanz.com</item>
+        <item>www.housecleanersingapore.com </item>
+        <item>Nwww.income.com.sg/domestic</item>
+    </string-array>
+
+    <string-array name="CleaningAddress">
+        <item>wsalesenquiry@homecleanz.com</item>
+        <item>- </item>
+        <item>Nwww.income.com.sg/domestic</item>
+    </string-array>
+
+    <string-array name="PLUMBER">
+        <item>SGPLUMBING</item>
+        <item>MR. PLUMBER SINGAPORE</item>
+        <item>HDB PLIMBERS</item>
+    </string-array>
+
+    <string-array name="ELECTRICIAN">
+        <item>ELECTRICIAN SINGAPORE</item>
+        <item>DAYLIGHT ELECTRICIAN </item>
+    </string-array>
+
+</resources>

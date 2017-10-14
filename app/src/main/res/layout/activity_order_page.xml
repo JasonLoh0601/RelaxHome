@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.world.jasonloh95.relaxhome.orderPage"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/OrderNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="OrderNo:"
+        android:layout_weight="0.04" />
+
+    <TextView
+        android:id="@+id/OrderNo1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="TextView"
+        android:layout_weight="0.04" />
+
+    <TextView
+        android:id="@+id/CompanyName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="Company Name:"
+        android:layout_weight="0.04" />
+
+    <TextView
+        android:id="@+id/CompanyName1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="TextView"
+        android:layout_weight="0.04" />
+
+    <TextView
+        android:id="@+id/orderDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="Order Date:"
+        android:layout_weight="0.04" />
+    <TextView
+        android:id="@+id/orderDate1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="TextView"
+        android:layout_weight="0.04" />
+
+    <TextView
+        android:id="@+id/performDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_weight="0.04"
+        android:text="PerformDate" />
+
+    <TextView
+        android:id="@+id/performDate1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_weight="0.04"
+        android:text="Perform Date" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_weight="0.04"
+        android:text="Phone Number:" />
+
+    <TextView
+        android:id="@+id/phone1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_weight="0.04"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_weight="0.04"
+        android:text="Address:" />
+
+    <TextView
+        android:id="@+id/address1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_weight="0.04"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_weight="0.04"
+        android:text="Email:" />
+
+    <TextView
+        android:id="@+id/email1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_weight="0.04"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/requirement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_weight="0.04"
+        android:text="Requirement: " />
+
+    <TextView
+        android:id="@+id/requirement1"
+        android:layout_width="match_parent"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_height="48dp"
+        android:layout_weight="0.04"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorbutton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="Delete" />
+</LinearLayout>

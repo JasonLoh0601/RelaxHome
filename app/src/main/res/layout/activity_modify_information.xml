@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbackground"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.world.jasonloh95.relaxhome.modifyInformation">
+
+
+    <TextView
+        android:id="@+id/UserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="User Name:"
+        android:layout_weight="0.04" />
+
+    <EditText
+        android:id="@+id/UserName1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text=""
+        android:layout_weight="0.04" />
+
+    <TextView
+        android:id="@+id/UserEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="User Email:"
+        android:layout_weight="0.04" />
+
+    <EditText
+        android:id="@+id/UserEmail1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text=""
+        android:layout_weight="0.04" />
+
+    <TextView
+        android:id="@+id/ContactNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="Contact Number:"
+        android:layout_weight="0.04" />
+    <EditText
+        android:id="@+id/ContactNumber1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text=""
+        android:layout_weight="0.04" />
+
+    <Button
+        android:id="@+id/submition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorbutton"
+        android:text="Submit"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+</LinearLayout>
